@@ -1,0 +1,20 @@
+# Code for fibonacci series upto N numbers
+
+# getting user input
+num = int(input("Enter the number: "))
+
+Sum = 0
+t1 = 0  # term 1
+t2 = 1  # term 2
+
+print("The fibonacci series upto", num,"numbers :")
+
+i = 0
+while i <= num:
+    print(t1, "+ ", end = "")
+    Sum = t1 + t2
+    t1 = t2
+    t2 = Sum
+    i = i + 1
+
+# end of code
